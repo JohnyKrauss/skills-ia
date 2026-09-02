@@ -1,0 +1,22 @@
+{
+  "$comment": "Copie para component-registry.json e preencha com os componentes reais da sua biblioteca. A chave de cada entrada é o componentKey/componentId do Figma.",
+  "components": {
+    "FIGMA_COMPONENT_KEY_DO_BOTAO": {
+      "description": "Botão primário da lib interna",
+      "fields": {
+        "label": { "source": "text", "contains": "label" },
+        "variant": { "source": "property", "key": "Variant", "default": "primary" },
+        "disabled": { "source": "property", "key": "Disabled", "default": "false" }
+      },
+      "template": "<app-button variant=\"{{variant}}\" [disabled]=\"{{disabled}}\">{{label}}</app-button>"
+    },
+    "FIGMA_COMPONENT_KEY_DO_INPUT": {
+      "description": "Campo de texto da lib interna",
+      "fields": {
+        "placeholder": { "source": "property", "key": "Placeholder", "default": "" },
+        "label": { "source": "text", "contains": "label" }
+      },
+      "template": "<app-input label=\"{{label}}\" placeholder=\"{{placeholder}}\"></app-input>"
+    }
+  }
+}
